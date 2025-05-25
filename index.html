@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carina – Torty z pasją</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf5;
+      color: #333;
+    }
+
+    header {
+      background-color: #f7f2ee;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #8a5d5d;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #555;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      background: url('https://source.unsplash.com/1600x600/?cake') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: inline-block;
+      padding: 10px 20px;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #7b6d6d;
+    }
+
+    .offer ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .offer li {
+      background-color: #f2ebe9;
+      padding: 20px;
+      border-radius: 8px;
+      flex: 1 1 200px;
+      text-align: center;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      margin: 10px;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .contact input, .contact textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      padding: 10px;
+      background-color: #d6b1b1;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f7f2ee;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px;
+      }
+
+      .offer ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .gallery img {
+        max-width: 90%;
+        margin: 5px auto;
+      }
+
+      .hero {
+        padding: 60px 10px;
+      }
+
+      .hero h2 {
+        font-size: 1.5rem;
+        padding: 8px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Carina</h1>
+    <nav>
+      <a href="#oferta">Oferta</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Tworzymy torty, które zachwycają!</h2>
+  </section>
+
+  <section id="oferta" class="offer">
+    <h3 class="section-title">Nasza oferta</h3>
+    <ul>
+      <li>Torty urodzinowe</li>
+      <li>Torty weselne</li>
+      <li>Torty dla dzieci</li>
+      <li>Torty bezglutenowe</li>
+      <li>Słodkie stoły</li>
+    </ul>
+  </section>
+
+  <section id="galeria" class="gallery">
+    <h3 class="section-title">Galeria</h3>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+      <img src="https://source.unsplash.com/300x300/?cake,1" alt="Tort 1">
+      <img src="https://source.unsplash.com/300x300/?cake,2" alt="Tort 2">
+      <img src="https://source.unsplash.com/300x300/?cake,3" alt="Tort 3">
+      <img src="https://source.unsplash.com/300x300/?cake,4" alt="Tort 4">
+    </div>
+  </section>
+
+  <section id="kontakt" class="contact">
+    <h3 class="section-title">Kontakt</h3>
+    <form>
+      <input type="text" placeholder="Imię i nazwisko" required>
+      <input type="email" placeholder="Adres e-mail" required>
+      <textarea rows="4" placeholder="Twoja wiadomość..." required></textarea>
+      <button type="submit">Wyślij</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Carina – Torty z pasją. Wszystkie prawa zastrzeżone.</p>
+  </footer>
+</body>
+</html>
