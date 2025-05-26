@@ -4,24 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carina – Torty z pasją</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #fffaf5;
-      color: #333;
+      background-color: #f9f8f5;
+      color: #3a3a3a;
     }
 
     header {
-      background-color: #f7f2ee;
+      background-color: #eae9e3;
       padding: 20px;
       text-align: center;
     }
 
+    header img.logo {
+      max-height: 60px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
     header h1 {
-      margin: 0;
+      display: inline;
       font-size: 2.5rem;
-      color: #8a5d5d;
+      color: #445544;
     }
 
     nav {
@@ -31,7 +38,7 @@
     nav a {
       margin: 0 15px;
       text-decoration: none;
-      color: #555;
+      color: #445544;
       font-weight: bold;
     }
 
@@ -59,7 +66,7 @@
       font-size: 1.8rem;
       margin-bottom: 20px;
       text-align: center;
-      color: #7b6d6d;
+      color: #445544;
     }
 
     .offer ul {
@@ -72,11 +79,12 @@
     }
 
     .offer li {
-      background-color: #f2ebe9;
+      background-color: #f2f1ed;
       padding: 20px;
       border-radius: 8px;
       flex: 1 1 200px;
       text-align: center;
+      color: #3a3a3a;
     }
 
     .gallery img {
@@ -102,7 +110,7 @@
 
     .contact button {
       padding: 10px;
-      background-color: #d6b1b1;
+      background-color: #445544;
       color: white;
       border: none;
       border-radius: 5px;
@@ -112,7 +120,7 @@
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #f7f2ee;
+      background-color: #eae9e3;
       font-size: 0.9rem;
     }
 
@@ -149,6 +157,7 @@
 </head>
 <body>
   <header>
+    <img src="logo-carina.png" alt="Logo Carina" class="logo">
     <h1>Carina</h1>
     <nav>
       <a href="#oferta">Oferta</a>
