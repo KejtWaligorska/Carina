@@ -3,206 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carina – Torty z pasją</title>
+  <title>Carina – Pracownia Tortów Artystycznych</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400;700&family=Parisienne&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f8f5;
-      color: #3a3a3a;
-    }
-
-    header {
-      background-color: #eae9e3;
-      padding: 20px;
-      text-align: center;
-    }
-
-    header img.logo {
-      max-height: 60px;
-      vertical-align: middle;
-      margin-right: 10px;
-    }
-
-    header h1 {
-      display: inline;
-      font-size: 2.5rem;
-      color: #445544;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #445544;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    .hero {
-      background: url('https://source.unsplash.com/1600x600/?cake') no-repeat center center/cover;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
-
-    .hero h2 {
-      font-size: 2rem;
-      background-color: rgba(0, 0, 0, 0.5);
-      display: inline-block;
-      padding: 10px 20px;
-    }
-
-    .section-title {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-      text-align: center;
-      color: #445544;
-    }
-
-    .offer ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .offer li {
-      background-color: #f2f1ed;
-      padding: 20px;
-      border-radius: 8px;
-      flex: 1 1 200px;
-      text-align: center;
-      color: #3a3a3a;
-    }
-
-    .gallery img {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 10px;
-      margin: 10px;
-    }
-
-    .contact form {
-      display: flex;
-      flex-direction: column;
-      max-width: 500px;
-      margin: 0 auto;
-    }
-
-    .contact input, .contact textarea {
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    .contact button {
-      padding: 10px;
-      background-color: #445544;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #eae9e3;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      nav a {
-        display: inline-block;
-        margin: 5px;
-      }
-
-      .offer ul {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .gallery img {
-        max-width: 90%;
-        margin: 5px auto;
-      }
-
-      .hero {
-        padding: 60px 10px;
-      }
-
-      .hero h2 {
-        font-size: 1.5rem;
-        padding: 8px 15px;
-      }
-    }
-  </style>
 </head>
 <body>
-  <header>
-    <img src="logo-carina.png" alt="Logo Carina" class="logo">
-    <h1>Carina</h1>
-    <nav>
-      <a href="#oferta">Oferta</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#o-mnie">O mnie</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#oferta">Oferta</a>
+    <a href="#zamow">Zamów tort</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <header id="home">
+    <h1>Witaj w Królestwie Słodkich Inspiracji!</h1>
+    <p>
+      W miejscu, gdzie powstają torty łączące wyjątkowy smak z niepowtarzalną formą...
+    </p>
   </header>
 
-  <section class="hero">
-    <h2>Tworzymy torty, które zachwycają!</h2>
+  <section id="o-mnie" class="about">
+    <h2 class="section-title">O mnie</h2>
+    <img src="zdjecie-karina.jpg" alt="Karina – właścicielka Carina">
+    <p>
+      Cześć! Jestem Karina i chcę opowiedzieć Ci, jak narodziła się Carina...
+    </p>
   </section>
 
-  <section id="oferta" class="offer">
-    <h3 class="section-title">Nasza oferta</h3>
-    <ul>
-      <li>Torty urodzinowe</li>
-      <li>Torty weselne</li>
-      <li>Torty dla dzieci</li>
-      <li>Torty bezglutenowe</li>
-      <li>Słodkie stoły</li>
-    </ul>
-  </section>
-
-  <section id="galeria" class="gallery">
-    <h3 class="section-title">Galeria</h3>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
-      <img src="https://source.unsplash.com/300x300/?cake,1" alt="Tort 1">
-      <img src="https://source.unsplash.com/300x300/?cake,2" alt="Tort 2">
-      <img src="https://source.unsplash.com/300x300/?cake,3" alt="Tort 3">
-      <img src="https://source.unsplash.com/300x300/?cake,4" alt="Tort 4">
+  <section id="galeria">
+    <h2 class="section-title">Galeria</h2>
+    <div class="gallery">
+      <img src="zdjecie1.jpg" alt="Słodki stół 1">
+      <img src="zdjecie2.jpg" alt="Tort 2">
+      <img src="zdjecie3.jpg" alt="Tort 3">
     </div>
   </section>
 
-  <section id="kontakt" class="contact">
-    <h3 class="section-title">Kontakt</h3>
-    <form>
-      <input type="text" placeholder="Imię i nazwisko" required>
-      <input type="email" placeholder="Adres e-mail" required>
-      <textarea rows="4" placeholder="Twoja wiadomość..." required></textarea>
-      <button type="submit">Wyślij</button>
-    </form>
+  <section id="oferta">
+    <h2 class="section-title">Oferta</h2>
+    <div class="offerings">
+      <div>
+        <h3>Torty okolicznościowe</h3>
+        <p>Opis oferty tortów zgodny z treścią powyżej.</p>
+      </div>
+      <div>
+        <h3>Słodki stół</h3>
+        <p>Opis oferty słodkiego stołu zgodny z treścią powyżej.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="zamow">
+    <h2 class="section-title">Zamów tort</h2>
+    <p>📅 Zamówienia przyjmuję z minimum tygodniowym wyprzedzeniem.<br>📩 Napisz lub prześlij inspiracje – wspólnie stworzymy coś wyjątkowego!</p>
+  </section>
+
+  <section id="kontakt">
+    <h2 class="section-title">Kontakt</h2>
+    <p>
+      Carina – Pracownia Tortów Artystycznych<br>
+      ul. Księżnej Konstancji 20, 44-300 Wodzisław Śląski<br>
+      +48 502 600 191<br>
+      <a href="mailto:pracowniaCarina@torty.pl">pracowniaCarina@torty.pl</a><br>
+      <a href="#">Polityka prywatności</a> | <a href="#">Polityka cookies</a>
+    </p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Carina – Torty z pasją. Wszystkie prawa zastrzeżone.</p>
+    &copy; 2025 Carina – Pracownia Tortów Artystycznych
   </footer>
 </body>
 </html>

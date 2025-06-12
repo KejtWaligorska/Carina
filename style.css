@@ -1,0 +1,82 @@
+:root {
+  --bg-light: #fffaf8;
+  --accent-pink: #f4e1e6;
+  --accent-green: #d8e3dc;
+  --accent-gold: #d5bfa3;
+  --text-dark: #333333;
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Lato', sans-serif;
+  --font-script: 'Parisienne', cursive;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+header, section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  background-color: var(--accent-pink);
+}
+
+header h1 {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: var(--bg-light);
+  padding: 20px;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-family: var(--font-serif);
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.about img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+.gallery, .offerings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+footer {
+  background-color: var(--accent-pink);
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+}
